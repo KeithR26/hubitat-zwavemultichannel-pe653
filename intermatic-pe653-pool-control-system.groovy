@@ -1708,14 +1708,13 @@ def List off4() { executeCommands(setChanState(4, 0), true) }
 def List off5() { executeCommands(setChanState(5, 0), true) }
 
 // May be called by CoRE
-def List setVSPSpeed(sp)       {delayBetweenLog(addRefreshCmds(setVSPSpeedInternal(sp))) }
+def List setVSPSpeed(sp)       { executeCommands(setVSPSpeedInternal(sp), true) }
 // Called by switch presses on the VSP buttons.
 def List setVSPSpeed0()        { executeCommands(setVSPSpeedInternal(0), true) }
 def List setVSPSpeed1()        { executeCommands(setVSPSpeedInternal(1), true) }
 def List setVSPSpeed2()        { executeCommands(setVSPSpeedInternal(2), true) }
 def List setVSPSpeed3()        { executeCommands(setVSPSpeedInternal(3), true) }
 def List setVSPSpeed4()        { executeCommands(setVSPSpeedInternal(4), true) }
-
 
 def List setMode1()            { executeCommands(setMode(1), true) }
 def List setMode2()            { executeCommands(setMode(2), true) }
