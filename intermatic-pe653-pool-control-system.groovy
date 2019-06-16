@@ -1786,7 +1786,6 @@ def delayResponseLog(parm, dly=DELAY, responseFlg=true) {
 	delayBetweenLog(parm, dly, responseFlg)
 }
 
-
 // Called from all commands
 def delayBetweenLog(parm, dly=DELAY, responseFlg=false) {
 	log("DEBUG", "+++++ delayBetweenLog parm[${parm.size}] dly=$dly responseFlg=${responseFlg}")
@@ -1891,9 +1890,6 @@ private channelNumber(String dni) {
 }
 
 private List executeCommands(commands, refreshControls = false) {
-	log("DEBUG", 2, "+++++ executeCommands")
-	logCommandList(commands)
-
 	if (refreshControls) {
 		commands += refreshCommandStrings()
 	}
