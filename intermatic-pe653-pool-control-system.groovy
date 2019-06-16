@@ -25,7 +25,7 @@
  *  See https://github.com/HubitatCommunity/hubitat-zwavemultichannel-pe653 for version information.
  *
 */
-def getVERSION () {"Ver 3.1.2"}
+def getVERSION () {"Ver 3.1.4a"}
 
 metadata {
 	definition (name: "Intermatic Pool Control System", author: "Tooluser", namespace:  "Nowhereville") {
