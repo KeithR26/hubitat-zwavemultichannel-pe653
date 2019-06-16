@@ -1275,6 +1275,10 @@ def List setHeatingSetpoint(Double degrees) {
 	executeCommands(setPoolSetpointInternal(degrees.toDouble()))
 }
 
+def List setThermostatMode(String mode) {
+	log("debug", "+++++ setThermostatMode ${mode} [no-op]")
+}
+
 private List setPoolSetpointInternal(Double degrees) {
 	log("debug", "+++++ setPoolSetpointInternal() ${degrees}")
 	setPoolOrSpaSetpoint(degrees, 1)
