@@ -1701,11 +1701,21 @@ def List on2()  { executeCommands(setChanState(2, 0xFF), true) }
 def List on3()  { executeCommands(setChanState(3, 0xFF), true) }
 def List on4()  { executeCommands(setChanState(4, 0xFF), true) }
 def List on5()  { executeCommands(setChanState(5, 0xFF), true) }
+def List on6()  { executeCommands(setChanState(6, 0xFF), true) }
+def List on7()  { executeCommands(setChanState(7, 0xFF), true) }
+def List on8()  { executeCommands(setChanState(8, 0xFF), true) }
+def List on9()  { executeCommands(setChanState(9, 0xFF), true) }
+def List on10()  { executeCommands(setChanState(10, 0xFF), true) }
 def List off1() { executeCommands(setChanState(1, 0), true) }
 def List off2() { executeCommands(setChanState(2, 0), true) }
 def List off3() { executeCommands(setChanState(3, 0), true) }
 def List off4() { executeCommands(setChanState(4, 0), true) }
 def List off5() { executeCommands(setChanState(5, 0), true) }
+def List off6() { executeCommands(setChanState(6, 0), true) }
+def List off7() { executeCommands(setChanState(7, 0), true) }
+def List off8() { executeCommands(setChanState(8, 0), true) }
+def List off9() { executeCommands(setChanState(9, 0), true) }
+def List off10() { executeCommands(setChanState(10, 0), true) }
 
 // May be called by CoRE
 def List setVSPSpeed(sp)       { executeCommands(setVSPSpeedInternal(sp), true) }
