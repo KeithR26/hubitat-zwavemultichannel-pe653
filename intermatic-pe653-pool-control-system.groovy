@@ -1159,8 +1159,8 @@ def List configure() {
 
 private List internalConfigure() {
 	def opMode2 = operationMode2.toInteger() & 0x03
-	def int tempWater = tempOffsetwater.toInteger()
-	def int tempAir   = tempOffsetair.toInteger()
+	def int tempWater = tempOffsetwater == null ? 0 : tempOffsetwater.toInteger()
+	def int tempAir   = tempOffsetair == null ? 0 : tempOffsetair.toInteger()
 	def cmds = []
 	if (tempWater < 0) tempWater = 256 + tempWater
 	if (tempAir < 0)   tempAir   = 256 + tempAir
